@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('location')->nullable();
+            $table->string('cv_file')->nullable();
             $table->timestamps();
         });
     }
