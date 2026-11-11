@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('headline');
             $table->string('short_bio');
             $table->text('description')->nullable();
-            $table->profile_foto('profile_foto')->nullable();
+            $table->string('profile_foto')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('location')->nullable();
