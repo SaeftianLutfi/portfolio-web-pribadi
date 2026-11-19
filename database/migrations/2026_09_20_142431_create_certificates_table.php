@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('issuer');
             $table->string('certificate_number')->nullable();
-            $table->string('issue_date')->nullable();
-            $table->string('expiration_date')->nullable();
+            $table->date('issue_date')->nullable();
+            $table->date('expiration_date')->nullable();
             $table->text('certificate_file')->nullable();
             $table->string('credential_url')->nullable();
             $table->text('description')->nullable();

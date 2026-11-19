@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('thumbnail')->nullable();
             $table->string('project_type')->nullable();
             $table->string('role')->nullable();
-            $table->string('start_date')->nullable();
-            $table->string('end_date')->nullable();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
             $table->string('github_url')->nullable();
             $table->string('demo_url')->nullable();
             $table->string('documentation_url')->nullable();

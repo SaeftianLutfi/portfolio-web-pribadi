@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('field_of_study')->nullable();
             $table->string('type');
             $table->text('description')->nullable();
-            $table->string('start_date')->nullable();
-            $table->string('end_date')->nullable();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
             $table->string('is_current');
             $table->integer('sort_order');
             $table->timestamps();
