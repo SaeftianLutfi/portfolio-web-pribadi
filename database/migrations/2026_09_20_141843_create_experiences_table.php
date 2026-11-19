@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('employment_type')->nullable();
             $table->string('location')->nullable();
             $table->text('description')->nullable();
-            $table->string('start_date');
-            $table->string('end_date')->nullable();
+            $table->date('start_date');
+            $table->date('end_date')->nullable();
             $table->string('is_current');
             $table->integer('sort_order');
             $table->timestamps();

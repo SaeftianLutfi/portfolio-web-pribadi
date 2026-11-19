@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('subject');
             $table->text('message');
             $table->string('status');
-            $table->string('read_at');
-            $table->string('replied_at');
+            $table->timestamp('read_at');
+            $table->timestamp('replied_at');
             $table->timestamps();
         });
     }

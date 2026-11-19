@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('content');
             $table->string('thumbnail')->nullable();
             $table->string('status');
-            $table->string('published_at')->nullable();
+            $table->date('published_at')->nullable();
             $table->timestamps();
         });
     }

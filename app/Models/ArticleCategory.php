@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class ArticleCategory extends Model
+{
+    use HasFactory;
+    protected $table = 'article_categories';
+    protected $primaryKey = 'id';
+    protected $keyType = 'int';
+    public $incrementing = true;
+    public $timestamps = true;
+
+    protected $fillable = [
+        'article_id',
+        'category_id'
+    ];
+
+    protected function cast():array
+    {
+        return [
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+        ];
+    }
+}
